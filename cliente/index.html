@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+<script src="https://sdk.mercadopago.com/js/v2"></script>
+    <title>Pago facil</title>
+</head>
+<body>
+    <div style="display: flex;flex-direction: column;">
+        <div>
+            <h2>Pago PsicoFísico</h2>
+        </div>
+        <div style="display: flex; flex-direction: row;">
+            <span>Boleta:<p id="name">654864</p></span>
+        </div>
+        <div style="display: flex; flex-direction: column;">
+
+             <hr>
+             <span>Importe:$<p id="unit_price">10</p></span>
+             <span>Cant:<input id="quantity"
+                type="number" style="width: 20px;"
+                value="1" /></span>
+             <button style="margin-top: 100px;" id="checkout-btn">
+                Abonar
+             </button>    
+             <div style="margin-top: 10px;" id="wallet_container"></div>                            
+        </div>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
