@@ -113,9 +113,9 @@ export const generaPagoMercadoPago = async (req,res) => {
         },
       ],
       back_urls: {
-        success: `${process.env.back_url}/success?id=${req.body.id}`,
-        failure: `${process.env.back_url}/failure?id=${req.body.id}`,
-        pending: `${process.env.back_url}/pending?id=${req.body.id}`,
+        success: `prutien://checkout/success?id=${req.body.id}`,
+        failure: `prutien://checkout/failure?id=${req.body.id}`,
+        pending: `prutien://checkout/pending?id=${req.body.id}`,
       },
       payment_methods :{
           installments:1 
